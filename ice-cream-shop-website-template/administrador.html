@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sweet Nanny</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+
+
+
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Help</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Support</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="https://www.facebook.com/profile.php?id=100068391902722"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="https://api.whatsapp.com/send?phone=3319735325"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a class="text-white px-3" href="https://www.instagram.com/sweet_nanny10/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweet</span>NANNY</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotras</a>
+                        <a href="product.html" class="nav-item nav-link">Servicios</a> <!-- agregar login -->
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweet</span>NANNY</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="service.html" class="nav-item nav-link">Opiniones</a>
+                        <a href="gallery.html" class="nav-item nav-link">Acceder</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+     <!-- Header Start -->
+     <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3 mt-lg-5">ADMINISTRADOR</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="">* * *</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">* * *</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <div class="container-fluid py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="contact-form bg-light rounded p-5">
+                        <div id="success"></div>
+                        
+                        <!-- Tabla de Servicios -->
+                        <div id="servicios">
+                            <h2 class="text-center mb-4">Servicios</h2>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>ID Padre</th>
+                                        <th>ID Niñera</th>
+                                        <th>Fecha Solicitud</th>
+                                        <th>Hora Inicio</th>
+                                        <th>Hora Final</th>
+                                        <th>Dirección</th>
+                                        <th>Estado</th>
+                                        <th>Descripción</th>
+                                        <!-- Agrega más columnas según tus necesidades -->
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Aquí se mostrarán los registros de la tabla de servicios -->
+                                </tbody>
+                            </table>
+                            <div class="text-center mb-3" style="display: flex; justify-content: center; gap: 20px;">
+                                <button class="btn btn-primary" onclick="abrirModalAgregarServicio()">Agregar Servicio</button>
+                                <button class="btn btn-primary" onclick="abrirModalEliminarServicio()">Eliminar Servicio</button>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Tabla de Padres -->
+                        <div id="padres">
+                            <h2 class="text-center mb-4">Padres</h2>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>ID Usuario</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Correo</th>
+                                        <th>Teléfono</th>
+                                        <!-- Agrega más columnas según tus necesidades -->
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Aquí se mostrarán los registros de la tabla de padres -->
+                                </tbody>
+                            </table>
+                            <div class="text-center mb-3" style="display: flex; justify-content: center; gap: 20px;">
+                                <button class="btn btn-primary" onclick="abrirModalAgregarPadre()">Agregar Padre</button>
+                                <button class="btn btn-primary" onclick="abrirModalEliminarPadre()">Eliminar Padre</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Tabla de Niñeras -->
+                        <div id="nineras">
+                            <h2 class="text-center mb-4">Niñeras</h2>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Edad</th>
+                                        <th>Estudios</th>
+                                        <th>Disponibilidad</th>
+                                        <th>Zonas de Trabajo</th>
+                                        <th>Cursos</th>
+                                        <th>Experiencia</th>
+                                        <!-- Agrega más columnas según tus necesidades -->
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Aquí se mostrarán los registros de la tabla de niñeras -->
+                                </tbody>
+                            </table>
+                            <div class="text-center mb-3" style="display: flex; justify-content: center; gap: 20px;">
+                                <button class="btn btn-primary" onclick="abrirModalAgregarNiñera()">Agregar Niñera</button>
+                                <button class="btn btn-primary" onclick="abrirModalEliminarNiñera()">Eliminar Niñera</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modales para agregar o editar registros -->
+    <!-- Agrega aquí los modales si los necesitas -->
+
+    <!-- Agrega tus scripts JS aquí -->
+    <script src="script.js"></script> <!-- Agrega tu script JS para la funcionalidad -->
+</body>
+</html>

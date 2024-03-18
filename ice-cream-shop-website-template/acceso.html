@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sweet Nanny</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Servicio de Niñera</title>
+    <style>
+        /* Estilos para ocultar los formularios inicialmente */
+        .form-container {
+            display: none;
+        }
+    </style>
+    
+
+    
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Help</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Support</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="https://www.facebook.com/profile.php?id=100068391902722"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="https://api.whatsapp.com/send?phone=3319735325"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a class="text-white px-3" href="https://www.instagram.com/sweet_nanny10/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweet</span>NANNY</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="about.html" class="nav-item nav-link">Nosotras</a>
+                        <a href="product.html" class="nav-item nav-link">Servicios</a> <!-- agregar login -->
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Sweet</span>NANNY</h1>
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="service.html" class="nav-item nav-link">Opiniones</a>
+                        <a href="gallery.html" class="nav-item nav-link">Acceder</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative text-center mb-5">Solicite su servicio de niñera</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="contact-form bg-light rounded p-5">
+                        <div id="success"></div>
+                        
+                        <!-- Botones de selección de servicio -->
+                        <div class="text-center mb-3">
+                            <button onclick="mostrarFormulario('ocasional')" class="btn btn-primary">Servicio Ocasional</button>
+                            <button onclick="mostrarFormulario('fijo')" class="btn btn-primary">Servicio Fijo</button>
+                            <button onclick="mostrarFormulario('temporal')" class="btn btn-primary">Servicio Temporal</button>
+                        </div>
+    
+                        <!-- Formularios de solicitud de servicio -->
+                        <div id="formulario-ocasional" class="form-container">
+                            <h2 class="text-center mb-4">Solicitud de Servicio Ocasional</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="fecha-exacta-ocasional">Fecha:</label>
+                                    <input type="date" id="fecha-exacta-ocasional" name="fecha-exacta-ocasional" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hora-inicio-ocasional">Hora de Inicio:</label>
+                                    <input type="time" id="hora-inicio-ocasional" name="hora-inicio-ocasional" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hora-final-ocasional">Hora Final:</label>
+                                    <input type="time" id="hora-final-ocasional" name="hora-final-ocasional" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion-ocasional">Dirección:</label>
+                                    <input type="text" id="direccion-ocasional" name="direccion-ocasional" class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="descripcion-ocasional">Descripción:</label>
+                                    <input type="text" id="descripcion-ocasional" name="descripcion-ocasional" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="formulario-fijo" class="form-container">
+                            <h2 class="text-center mb-4">Solicitud de Servicio Fijo</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="dias-semana-fijo">Días de la Semana:</label>
+                                    <select id="dias-semana-fijo" name="dias-semana-fijo" class="form-control" multiple>
+                                        <option value="lunes">Lunes</option>
+                                        <option value="martes">Martes</option>
+                                        <option value="miércoles">Miércoles</option>
+                                        <option value="jueves">Jueves</option>
+                                        <option value="viernes">Viernes</option>
+                                        <option value="sábado">Sábado</option>
+                                        <option value="domingo">Domingo</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="hora-inicio-fijo">Hora de Inicio:</label>
+                                    <input type="time" id="hora-inicio-fijo" name="hora-inicio-fijo" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hora-final-fijo">Hora Final:</label>
+                                    <input type="time" id="hora-final-fijo" name="hora-final-fijo" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion-fijo">Dirección:</label>
+                                    <input type="text" id="direccion-fijo" name="direccion-fijo" class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="descripcion-fijo">Descripción:</label>
+                                    <input type="text" id="descripcion-fijo" name="descripcion-fijo" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div id="formulario-temporal" class="form-container">
+                            <h2 class="text-center mb-4">Solicitud de Servicio Temporal</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="fecha-exacta-temporal">Fecha de inicio:</label>
+                                    <input type="date" id="fecha-exacta-temporal" name="fecha-exacta-temporal" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fecha-exactatemp-temporal">Fecha de termino:</label>
+                                    <input type="date" id="fecha-exactatemp-temporal" name="fecha-exactatemp-temporal" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dias-semana-temporal">Días de la Semana:</label>
+                                    <select id="dias-semana-temporal" name="dias-semana-temporal" class="form-control" multiple>
+                                        <option value="lunes">Lunes</option>
+                                        <option value="martes">Martes</option>
+                                        <option value="miércoles">Miércoles</option>
+                                        <option value="jueves">Jueves</option>
+                                        <option value="viernes">Viernes</option>
+                                        <option value="sábado">Sábado</option>
+                                        <option value="domingo">Domingo</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="hora-inicio-temporal">Hora de Inicio:</label>
+                                    <input type="time" id="hora-inicio-temporal" name="hora-inicio-temporal" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hora-final-temporal">Hora Final:</label>
+                                    <input type="time" id="hora-final-temporal" name="hora-final-temporal" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion-temporal">Dirección:</label>
+                                    <input type="text" id="direccion-temporal" name="direccion-temporal" class="form-control">
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="descripcion-temporal">Descripción:</label>
+                                    <input type="text" id="descripcion-temporal" name="descripcion-temporal" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-center">
+                            <button id="botonEnviar" class="btn btn-primary" style="display: none;">Enviar petición</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarFormulario(tipoServicio) {
+            // Ocultar todos los formularios
+            document.querySelectorAll('.form-container').forEach(function(formulario) {
+                formulario.style.display = 'none';
+            });
+            
+            // Mostrar el formulario respectivo según el tipo de servicio seleccionado
+            document.getElementById('formulario-' + tipoServicio).style.display = 'block';
+        }
+    </script>
+    
+    <script>
+        // Espera a que el documento esté listo
+        document.addEventListener("DOMContentLoaded", function () {
+            // Manejar la selección de días de la semana
+            var selectDiasSemana = document.getElementById("dias-semana-fijo");
+    
+            selectDiasSemana.addEventListener("change", function () {
+                var selectedOptions = Array.from(selectDiasSemana.selectedOptions, option => option.value);
+                console.log("Días seleccionados:", selectedOptions);
+            });
+        });
+    </script>
+
+    <script>
+    function mostrarBotonEnviar() {
+        var botonEnviar = document.getElementById("botonEnviar");
+        botonEnviar.style.display = "block";
+    }
+    </script>
+
+    <script>
+    function mostrarFormulario(tipoServicio) {
+        var formularios = document.getElementsByClassName("form-container");
+        for (var i = 0; i < formularios.length; i++) {
+            formularios[i].style.display = "none";
+        }
+        
+        var formularioMostrar = document.getElementById("formulario-" + tipoServicio);
+        formularioMostrar.style.display = "block";
+        
+        mostrarBotonEnviar(); // Mostrar el botón de enviar petición cuando se muestra el formulario
+    }
+    </script>
+
+</body>
+
+</html>
